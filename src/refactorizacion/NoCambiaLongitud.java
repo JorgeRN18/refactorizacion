@@ -9,10 +9,11 @@ package refactorizacion;
  *
  * @author jruiz
  */
-public class NoCambiaLongitud {
+public class NoCambiaLongitud extends Vector {
 
     public void Visualizar(int[] v) {
         int i = 0;
+        int Longitud = 0;
         //Mostramos los elementos del array
         System.out.print("v={");
         for (i = 0; i < Longitud; i++) {
@@ -20,7 +21,5 @@ public class NoCambiaLongitud {
         }
         System.out.println("}");
     }
-//metodo que inserta un elemento en la posicion posicion desplazando a la derecha todos los elementos
-    private int Longitud;   
 
 }

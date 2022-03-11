@@ -11,23 +11,6 @@ package refactorizacion;
  */
 public class NoCambiaLongitud {
 
-    /**
-     * @return the valor
-     */
-    public int getValor() {
-        return valor;
-    }
-
-    /**
-     * @param valor the valor to set
-     */
-    public void setValor(int valor) {
-        this.valor = valor;
-    }
-
-    private int valor;
-//metodo que modifica el contenido de la posicion posicion de un array con el valor pasado
-
     public void Visualizar(int[] v) {
         int i = 0;
         //Mostramos los elementos del array
@@ -38,7 +21,6 @@ public class NoCambiaLongitud {
         System.out.println("}");
     }
 //metodo que inserta un elemento en la posicion posicion desplazando a la derecha todos los elementos
-    private int Longitud;
-
+    private int Longitud;   
 
 }

@@ -11,7 +11,21 @@ package refactorizacion;
  */
 public class Prueba {
 
-    public int valor;
+    /**
+     * @return the valor
+     */
+    public int getValor() {
+        return valor;
+    }
+
+    /**
+     * @param valor the valor to set
+     */
+    public void setValor(int valor) {
+        this.valor = valor;
+    }
+
+    private int valor;
 //metodo que modifica el contenido de la posicion posicion de un array con el valor pasado
 
     public void modificar(int[] vector, int posicion) {
@@ -26,7 +40,7 @@ public class Prueba {
         if (posicion < vector.length) {
 //mostramos su contenido
             System.out.println("Elemento a modificar=" + vector[posicion]);
-            vector[posicion] = this.valor;
+            vector[posicion] = this.getValor();
         }
 //Mostramos los elementos del array
         System.out.print("v={");
@@ -80,11 +94,11 @@ public class Prueba {
         System.out.println("}");
 //Borramos el elemento
         if (p < LongitudActual.length) {
-            System.out.println("Elemento a insertar=" + this.valor);
+            System.out.println("Elemento a insertar=" + this.getValor());
             for (i = LongitudActual.length - 1; i > p; i--) {
                 LongitudActual[i] = LongitudActual[i - 1];
             }
-            LongitudActual[p] = this.valor;
+            LongitudActual[p] = this.getValor();
         }
 //Mostramos los elementos del array
         System.out.print("v={");

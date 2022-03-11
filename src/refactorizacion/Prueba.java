@@ -64,7 +64,6 @@ public class Prueba {
 //metodo que inserta un elemento en la posicion posicion desplazando a la derecha todos los elementos
 
     public void insertar(int[] LongitudActual, Object par1) {
-        
         int p = 1, i;
 //mostramos su contenido
 //Mostramos los elementos del array

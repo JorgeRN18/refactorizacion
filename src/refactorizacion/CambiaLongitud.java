@@ -9,14 +9,8 @@ package refactorizacion;
  *
  * @author jruiz
  */
-public class CambiaLongitud {
+public class CambiaLongitud extends NewClass {
 
-    /**
-     * @return the valor
-     */
-    public int getValor() {
-        return valor;
-    }
 
     /**
      * @param valor the valor to set
@@ -50,6 +44,7 @@ public class CambiaLongitud {
         System.out.println("}");
     }
 //metodo que borra el elemento de la posicion posicion desplazando a la izquierda todos los elementos
+//metodo que borra el elemento de la posicion posicion desplazando a la izquierda todos los elementos
 
     public void borrar(int[] v) {
         int p = 1, i;
@@ -71,15 +66,6 @@ public class CambiaLongitud {
         Visualizar(v);
     }
 
-    public void Visualizar(int[] v) {
-        int i = 0;
-        //Mostramos los elementos del array
-        System.out.print("v={");
-        for (i = 0; i < Longitud; i++) {
-            System.out.print(v[i] + ",");
-        }
-        System.out.println("}");
-    }
 //metodo que inserta un elemento en la posicion posicion desplazando a la derecha todos los elementos
     private int Longitud;
 

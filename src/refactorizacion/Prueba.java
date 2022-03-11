@@ -25,7 +25,9 @@ public class Prueba {
         System.out.println("}");
 //Modificamos el array
         if (posicion < vector.length) {
-            ModificaElemento(vector, posicion);
+//mostramos su contenido
+            System.out.println("Elemento a modificar=" + vector[posicion]);
+            vector[posicion] = this.valor;
         }
 //Mostramos los elementos del array
         System.out.print("v={");
@@ -47,7 +49,10 @@ public class Prueba {
         System.out.println("}");
 //Borramos el elemento
         if (p < v.length) {
-            BorraElemento(v, p, i);
+            System.out.println("Elemento a borrar=" + v[p]);
+            for (i = p; i < v.length - 1; i++) {
+                v[i] = v[i + 1];
+            }
         }
 //Mostramos los elementos del array
         System.out.print("v={");
@@ -69,7 +74,11 @@ public class Prueba {
         System.out.println("}");
 //Borramos el elemento
         if (p < v.length) {
-            InsertaElemento(i, v, p);
+            System.out.println("Elemento a insertar=" + this.valor);
+            for (i = v.length - 1; i > p; i--) {
+                v[i] = v[i - 1];
+            }
+            v[p] = this.valor;
         }
 //Mostramos los elementos del array
         System.out.print("v={");
@@ -79,24 +88,4 @@ public class Prueba {
         System.out.println("}");
     }
 
-    void BorraElemento(int[] v, int p, int i) {
-        System.out.println("Elemento a borrar=" + v[p]);
-        for (i = p; i < v.length - 1; i++) {
-            v[i] = v[i + 1];
-        }
-    }
-
-    void InsertaElemento(int i, int[] v, int p) {
-        System.out.println("Elemento a insertar=" + this.valor);
-        for (i = v.length - 1; i > p; i--) {
-            v[i] = v[i - 1];
-        }
-        v[p] = this.valor;
-    }
-
-    void ModificaElemento(int[] v, int p) {
-//mostramos su contenido
-        System.out.println("Elemento a modificar=" + v[p]);
-        v[p] = this.valor;
-    }
 }

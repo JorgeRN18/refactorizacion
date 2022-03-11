@@ -14,9 +14,8 @@ public class Prueba {
     public int valor;
 //metodo que modifica el contenido de la posicion posicion de un array con el valor pasado
 
-    public void modificar(int[] vector) {
+    public void modificar(int[] vector, int posicion) {
         int i;
-        int posicion = 1;
 //Mostramos los elementos del array
         System.out.print("v={");
         for (i = 0; i < vector.length; i++) {

@@ -63,27 +63,28 @@ public class Prueba {
     }
 //metodo que inserta un elemento en la posicion posicion desplazando a la derecha todos los elementos
 
-    public void insertar(int[] v) {
+    public void insertar(int[] LongitudActual, Object par1) {
+        
         int p = 1, i;
 //mostramos su contenido
 //Mostramos los elementos del array
         System.out.print("v={");
-        for (i = 0; i < v.length; i++) {
-            System.out.print(v[i] + ",");
+        for (i = 0; i < LongitudActual.length; i++) {
+            System.out.print(LongitudActual[i] + ",");
         }
         System.out.println("}");
 //Borramos el elemento
-        if (p < v.length) {
+        if (p < LongitudActual.length) {
             System.out.println("Elemento a insertar=" + this.valor);
-            for (i = v.length - 1; i > p; i--) {
-                v[i] = v[i - 1];
+            for (i = LongitudActual.length - 1; i > p; i--) {
+                LongitudActual[i] = LongitudActual[i - 1];
             }
-            v[p] = this.valor;
+            LongitudActual[p] = this.valor;
         }
 //Mostramos los elementos del array
         System.out.print("v={");
-        for (i = 0; i < v.length; i++) {
-            System.out.print(v[i] + ",");
+        for (i = 0; i < LongitudActual.length; i++) {
+            System.out.print(LongitudActual[i] + ",");
         }
         System.out.println("}");
     }

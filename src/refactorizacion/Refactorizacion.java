@@ -25,6 +25,6 @@ public class Refactorizacion {
         p.valor = 10;
         p.modificar(v);
         p.borrar(v);
-        p.insertar(v);
+        p.insertar(v, null);
     }
 }
